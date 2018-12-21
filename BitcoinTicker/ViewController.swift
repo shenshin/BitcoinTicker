@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -50,6 +52,16 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         print(finalURL)
     }
     
+    func getBitcoinRate(url: String, params: [String : String]){
+        Alamofire.request(url, method: .get, parameters: params).responseJSON{
+            response in
+            if response.result.isSuccess{
+                
+            } else {
+                
+            }
+        }
+    }
 //    
 //    //MARK: - Networking
 //    /***************************************************************/
