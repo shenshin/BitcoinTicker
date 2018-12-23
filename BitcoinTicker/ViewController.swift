@@ -6,6 +6,8 @@
 //  Copyright © 2018 Ales Shenshin. All rights reserved.
 //
 
+//encoding with gpg
+
 import UIKit
 import Alamofire
 import SwiftyJSON
